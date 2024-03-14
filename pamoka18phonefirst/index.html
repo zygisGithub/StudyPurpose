@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+        <toolbar>
+            <div>
+                <h2>Hiking <blue>Tours</blue></h2>
+            </div>
+            <div class="display-none-mob display-desktop">
+                <a class="link-black" href="#home">Home</a>
+                <a class="link-black" href="#about">About</a>
+                <a class="link-black" href="#services">Services</a>
+                <a class="link-black" href="#featured">Featured</a>
+                <a class="link-black" href="#gallery">Gallery</a>
+            </div>
+            <div class="mrg-right-30">
+                <a href=""><img class="icons" src="images/facebook.png" alt=""></a>
+                <a href=""><img class="icons" src="images/twitter.png" alt=""></a>
+                <a href=""><img class="icons" src="images/linkedin.png" alt=""></a>
+            </div>
+        </toolbar>
+    <header id="home">
+        <h1 class="title">CONTINUE EXPLORING</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda cumque eaque earum eius ipsam, itaque, iure iusto porro quaerat quasi repellendus reprehenderit, rerum similique sit totam veritatis. Adipisci, pariatur!</p>
+        <a class="link-btn" href="#featured"><div class="myButton">Explore Tours</div></a>
+    </header>
+    <main>
+        <div>
+            <article class="display-flex column just-c mrg30" id="about">
+                <div class=" display-flex just-c align-c mrg30">
+                    <h2>ABOUT <blue>US</blue></h2>
+                </div>
+                <div class="about-us-p">
+                    <div class="flex-1 about-us-img-container">
+                    <img class="aboutus-img" src="https://mountainhouse.com/cdn/shop/articles/hikers-on-a-trek-featured-image_1024x.jpg?v=1634751803" alt="">
+                    </div>
+                    <div class="flex-1">
+                    <h3>EXPLORE THE DIFERENCE</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci alias assumenda cumque dolorem eos est exercitationem, facere harum illo in maiores nemo perferendis perspiciatis provident quas quod totam velit!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing <span id="moreText" style="display:none;">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris rutrum, quam id finibus dignissim, velit sapien posuere purus, vel aliquet odio nisi eu purus. Curabitur malesuada justo a nibh pharetra, sed aliquam metus rutrum.</span> <p><a id="readMoreLink" class="read-more" onclick="showMore()">Read More...</a></p></p>
+                    </div>
+                </div>
+            </article>
+            <section class="our-services">
+                <div class="display-flex just-c">
+                    <h2 class="pad-20">OUR <blue>SERVICES</blue></h2>
+                </div>
+                <div>
+                    <div class="grid-box">
+                        <div class="">
+                            <div><img class="service-icons" src="images/wallet.png" alt=""></div>
+                            <div>
+                                <h4>SAVING MONEY</h4>
+                                <p>Saving money is our best priorityLorem ipsum dolor sit amet, consectetur adipisicing</p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div><img class="service-icons" src="images/tree.png" alt=""></div>
+                            <div>
+                                <h4>ENDLESS HIKING</h4>
+                                <p>We never stop hiking.Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div><img class="service-icons" src="images/sock.png" alt=""></div>
+                            <div>
+                                <h4>AMAZING COMFORT</h4>
+                                <p>We use only comfortable gear.Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="featured">
+                <div class="text-align-center">
+                    <h2 class="pad-20">FEATURED <blue>TOURS</blue></h2>
+                </div>
+                <div class="featured-grid-box">
+                    <div class="display-flex column featured-box">
+                        <div class="pos-relative">
+                            <img class="featured-img" src="FEATUREDimages/mountain.png" alt="">
+                            <div class="label">August 14th,2020</div>
+                        </div>
+                        <h4>Tibet Adventure</h4>
+                        <div class="display-flex just-b">
+                            <blue>China</blue>
+                            <div>
+                                <p class="mrg-b2">6 Days</p>
+                                <span>From $2100</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display-flex column featured-box">
+                        <div class="pos-relative">
+                            <img class="featured-img" src="FEATUREDimages/canyon.png" alt="">
+                            <div class="label">December 5th,2022</div>
+                        </div>
+                        <h4>Best Of Java</h4>
+                        <div class="display-flex just-b">
+                            <blue>Indonesia</blue>
+                            <div>
+                                <p class="mrg-b2">10 Days</p>
+                                <span>From $4100</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display-flex column featured-box">
+                        <div class="pos-relative">
+                            <img class="featured-img" src="FEATUREDimages/honkkong.png" alt="">
+                            <div class="label">October 1th, 2022</div>
+                        </div>
+                        <h4>Explore Hong Kong</h4>
+                        <div class="display-flex just-b">
+                            <blue>Hong Kong</blue>
+                            <div>
+                                <p class="mrg-b2">12 Days</p>
+                                <span>From $3100</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display-flex column featured-box">
+                        <div class="pos-relative">
+                            <img class="featured-img" src="FEATUREDimages/kenya.png" alt="">
+                            <div class="label">September 14th,2022</div>
+                        </div>
+                        <h4>Kenya Highlights</h4>
+                        <div class="display-flex just-b">
+                            <blue>Kenya</blue>
+                            <div>
+                                <p class="mrg-b2">22 Days</p>
+                                <span>From $5400</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-align-center pad-20 mrg30"><a class="blue-link" href="#home">All Tours</a></p>
+            </section>
+            <section id="gallery" class="display-flex column align-c">
+                <div class="text-align-center pad-20 mrg30"><h2>OUR <blue>GALLERY</blue></h2></div>
+                <div class="gallery">
+                    <div class="gallery-box1">
+                        <img class="gallery-icon" src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-5.png" alt="">
+                    </div>
+                    <div class="gallery-box2">
+                        <img class="gallery-icon" src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-5.png" alt="">
+                    </div>
+                    <div class="gallery-box3">
+                        <img class="gallery-icon" src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-5.png" alt="">
+                    </div>
+                    <div class="gallery-box4">
+                        <img class="gallery-icon" src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-5.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section id="services">
+                <div class="contact-form">
+                    <div class="flex-1">
+                        <h3>WANT LATEST TOUR INFO AND UPDATES?</h3>
+                        <p>Sing Up For Newsletter And Stay Up To Date</p>
+                    </div>
+                    <div class="flex-2">
+                        <div class="input-with-button">
+                            <input type="email" placeholder="YOUR EMAIL">
+                            <button type="button">SUBMIT</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-navi">
+                <a class="link-white" href="#home">Home</a>
+                <a class="link-white" href="#about">About</a>
+                <a class="link-white" href="#services">Services</a>
+                <a class="link-white" href="#featured">Featured</a>
+                <a class="link-white" href="#gallery">Gallery</a>
+            </div>
+            <div class="mrg-right-30 pad-20">
+                <a href=""><img class="icons" src="images/facebook.png" alt=""></a>
+                <a href=""><img class="icons" src="images/twitter.png" alt=""></a>
+                <a href=""><img class="icons" src="images/linkedin.png" alt=""></a>
+            </div>
+            <div class="pad-20">
+                <p>Copyright C Hiking Tours 2022. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
