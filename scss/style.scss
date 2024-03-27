@@ -1,0 +1,174 @@
+//variables
+$hover-color: linear-gradient(to bottom, #ff3838, #ff7373);
+$light-grey: #fff1f1;
+$hover-color-white: linear-gradient(to bottom, #ffe4e4, #ffe4e4);
+
+
+//mixins
+@mixin background-settings(){
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+// code
+.light-grey-bg {
+  background-color: $light-grey;
+}
+body {
+  background-image: url("https://bostami-bootstrap-nextjs.vercel.app/assets/img/bg/page-bg-1.jpg");
+  @include background-settings;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #595959;
+}
+.night-mode {
+  background-image: url("icons/moon-fill.svg");
+  @include background-settings;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.menu {
+  background-image: url("icons/list.svg");
+  @include background-settings;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.night-mode-wrapper {
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  &:hover {
+    background-image: $hover-color;
+    .night-mode {
+      background-image: url("icons/moon.svg");
+    }
+  }
+}
+.menu-wrapper {
+  background-image: $hover-color;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  &:hover {
+    background-image: linear-gradient(to bottom, #3c47ff, #435cff);
+  }
+}
+.bg-white {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
+  border-radius: 10px;
+}
+.profile-pic-wrapper {
+  border-radius: 10%;
+  width: 200px;
+  height: 200px;
+  background-image: url("https://bostami-bootstrap-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fparsonal-info%2Fparson-img-3.png&w=640&q=75");
+  @include background-settings
+}
+@media screen and (min-width: 1200px) {
+  .profile-wrapper {
+    position: relative;
+    margin-top: 200px;
+  }
+  .profile-pic-wrapper {
+    position: absolute;
+    top: -130px;
+  }
+  .content-wrapper {
+    margin-top: 200px;
+  }
+  h3 {
+    padding-top: 100px;
+  }
+}
+@media screen and (min-width: 993px) {
+  .sticky-wrapper {
+    position: sticky;
+    top: 140px;
+    z-index: 10;
+  }
+}
+.link {
+  color: #5555ff;
+  transition: color 0.3s ease;
+  background-color: $light-grey;
+  padding: 15px;
+  border-radius: 10px;
+  &:hover {
+    color: $light-grey; /* You can adjust this color as needed */
+    background-color: lightcoral;
+  }
+}
+.link-white {
+  color: #5555ff;
+  transition: color 0.3s ease;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
+  &:hover {
+    color: $light-grey; /* You can adjust this color as needed */
+    background-color: lightcoral;
+  }
+}
+.border-radius {
+  border-radius: 10px;
+}
+.download-button {
+  color: white;
+  background-image: $hover-color;
+  border-radius: 10px;
+  transition: 0.3s ease transform;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+.margin-x {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.menu-hover {
+  background-image: $hover-color-white;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: white;
+    background-image: $hover-color;
+  }
+}
+.bg-green {
+  background-color: #e7ffe7;
+}
+.bg-blue {
+  background-color: #e9f3ff;
+}
+.line {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    top: 20px;
+    margin-left: 10px;
+    background-color: #676767;
+  }
+}
+.carousel-item {
+  img {
+    margin: 20px;
+    height: 50px;
+  }
+}
+
+
+
+
+
