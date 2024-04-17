@@ -1,0 +1,213 @@
+body {
+  color: #ffffff;
+  margin: 0;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  font-family: "MedievalSharp";
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-image: url("https://www.shutterstock.com/image-illustration/2d-brick-gray-wall-texture-600nw-2127747113.jpg");
+}
+header #cheatBtn {
+  background-image: url("images/button.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: scale 0.5s ease;
+}
+header #cheatBtn:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+header h1 {
+  font-size: 60px;
+  color: #d5d5d5;
+}
+
+#resources {
+  opacity: 90%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#resources div {
+  display: flex;
+  gap: 100px;
+  font-size: 35px;
+}
+
+#getRes {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: space-around;
+  position: relative;
+}
+
+#shop {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 60px;
+  position: fixed;
+  right: -1800px;
+  z-index: 9999;
+  transition: right 2s ease;
+  background-color: #4f4f4f;
+}
+#shop::after {
+  content: "SHOP";
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+}
+#shop:hover {
+  right: 0;
+  opacity: 90%;
+}
+#shop:hover::before {
+  right: 50px;
+  width: 1000%;
+  opacity: 0;
+}
+#shop::before {
+  content: "Shop:";
+  position: absolute;
+  background-color: #4f4f4f;
+  padding: 10px;
+  top: 20px;
+  left: -250px;
+  font-size: 30px;
+  color: #d5d5d5;
+}
+
+#gameContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  flex: 1;
+  opacity: 90%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  border-radius: 20px;
+  background-color: #48804b;
+  user-select: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: box-shadow 0.5s ease, scale 0.5s ease;
+  border: solid 5px #3f3f3f;
+}
+.box:hover {
+  scale: 1.1;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.box .customHr {
+  width: 90%;
+  height: 2px;
+  opacity: 50%;
+  background-color: #ffffff;
+}
+
+#city {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+  padding: 150px;
+  width: 90%;
+  height: 90%;
+  border-radius: 35%;
+  transition: border 4s ease;
+}
+
+.cityContainer {
+  border: 10px solid #4f4f4f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  width: 90%;
+  height: 100%;
+  background-image: url("https://img.freepik.com/premium-vector/green-japanese-paper-japanese-pattern_180401-2596.jpg");
+  background-position: center;
+  background-repeat: repeat;
+}
+
+@keyframes scaleUp {
+  0% {
+    scale: 0.4;
+  }
+  100% {
+    scale: 1;
+  }
+}
+#gameContainer {
+  background-image: url("https://www.shutterstock.com/image-illustration/2d-brick-gray-wall-texture-600nw-2127747113.jpg");
+}
+
+.justCenter {
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(5px);
+  }
+  30% {
+    transform: translateX(-4px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  70% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(1px);
+  }
+}
+.box-two {
+  background-image: url("images/button.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 70px;
+  transition: scale 0.3s ease;
+  user-select: none;
+}
+.box-two img {
+  width: 100px;
+  height: 100px;
+  transition: scale 0.5s ease;
+}
+.box-two:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+.box-two:hover img {
+  scale: 1.1;
+}
+
+/*# sourceMappingURL=style.css.map */
