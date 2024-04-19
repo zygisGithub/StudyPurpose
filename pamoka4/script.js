@@ -143,6 +143,7 @@ document.getElementById('attack').onclick = function() {
 
 potion.onclick = function () {
     if (gold >= 50) {
+        gold -= 50
         playerHealthCount = 100
         pHealth.innerHTML = `${playerHealthCount}/100`
         playerHealth.style.width = `${playerHealthCount}%`

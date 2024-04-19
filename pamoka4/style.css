@@ -137,6 +137,7 @@ body {
   align-items: center;
   color: #afafaf;
   transition: scale 0.5s ease;
+  user-select: none;
 }
 .btn:hover {
   cursor: pointer;
