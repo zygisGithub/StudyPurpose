@@ -1,0 +1,314 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: MedievalSharp;
+  font-size: 30px;
+  background-image: url("https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt94fc36285a5925ce/655d01c548602b5e712c1d42/summonersriftart.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+.container {
+  display: flex;
+  padding: 20px;
+  width: fit-content;
+  height: fit-content;
+  background-image: url("https://i.ytimg.com/vi/lpBq90Nc9mc/maxresdefault.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 5px #413b3b;
+}
+#player {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 20px;
+  align-items: center;
+}
+#playerImage {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 118px;
+  border: 5px solid #382222;
+  transition: scale 0.5s ease;
+  display: flex;
+  flex-direction: column-reverse;
+}
+#playerHealthBar {
+  height: 70px;
+  width: 280px;
+  border: solid 5px #703838;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+#playerHealthProgress {
+  background-color: #ff4040;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 0.5s ease;
+}
+#enemy {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 20px;
+  align-items: center;
+}
+#enemyImage {
+  background-image: url("https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_0.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 118px;
+  border: 5px solid #382121;
+}
+#enemyHealthBar {
+  height: 70px;
+  width: 280px;
+  border: solid 5px #703838;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+#enemyHealthProgress {
+  background-color: #ff4040;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 0.5s ease;
+}
+.display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#potion {
+  height: 50px;
+  width: 50px;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cfaadf22-1e71-4370-b2fa-500bcf51106c/dejvcui-7be4f9a9-b865-4d94-a6ca-6fd00aa9a1ea.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NmYWFkZjIyLTFlNzEtNDM3MC1iMmZhLTUwMGJjZjUxMTA2Y1wvZGVqdmN1aS03YmU0ZjlhOS1iODY1LTRkOTQtYTZjYS02ZmQwMGFhOWExZWEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.3_LLvla7RL8TU1BkNO4xpoVd6ynSy5Bk-o23auvjUJY");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hud {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 100px;
+}
+.btn {
+  padding: 30px;
+  width: 300px;
+  height: 150px;
+  background-image: url("https://media-s3-us-east-1.ceros.com/redbull/images/2020/09/21/4a206e5ef27e77d8f4a9b113827e304b/button-1-at-3x.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afafaf;
+  transition: scale 0.5s ease;
+  &:hover {
+    cursor: pointer;
+    scale: 1.1;
+  }
+}
+#healthCountP {
+  position: absolute;
+  top: -10px;
+  left: 80px;
+  z-index: 33;
+}
+#healthCountE {
+  position: absolute;
+  top: -10px;
+  left: 80px;
+  z-index: 33;
+}
+.d-flex {
+  display: flex;
+  gap: 20px;
+}
+#potion {
+  transition: scale 0.5s;
+  &:hover {
+    scale: 1.1;
+    cursor: pointer;
+  }
+}
+audio {
+  display: none;
+}
+#gameContainer {
+  display: none;
+}
+#gameOver {
+  display: none;
+}
+#playerImg1 {
+  background-image: url("https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vayne_0.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 118px;
+  border: 5px solid #382222;
+  transition: scale 0.5s ease;
+  display: flex;
+  flex-direction: column-reverse;
+  &:hover {
+    cursor: pointer;
+    scale: 1.1;
+  }
+}
+#playerImg2 {
+  background-image: url("https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Olaf_0.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 118px;
+  border: 5px solid #382121;
+  transition: scale 0.5s ease;
+  display: flex;
+  flex-direction: column-reverse;
+  &:hover {
+    cursor: pointer;
+    scale: 1.1;
+  }
+}
+#playerImg3 {
+  background-image: url("https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_0.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 118px;
+  border: 5px solid #382121;
+  transition: scale 0.5s ease;
+  display: flex;
+  flex-direction: column-reverse;
+  &:hover {
+    cursor: pointer;
+    scale: 1.1;
+  }
+}
+#playerImg4 {
+  background-image: url("https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lissandra_0.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 118px;
+  border: 5px solid #382121;
+  transition: scale 0.5s ease;
+  display: flex;
+  flex-direction: column-reverse;
+  &:hover {
+    cursor: pointer;
+    scale: 1.1;
+  }
+}
+#playerImg5 {
+  background-image: url("https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_0.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 118px;
+  border: 5px solid #382121;
+  transition: scale 0.5s ease;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column-reverse;
+  &:hover {
+    cursor: pointer;
+    scale: 1.1;
+  }
+}
+.colum {
+  flex-direction: column;
+}
+.justCenter{
+  justify-content: center;
+}
+.alignCenter {
+  align-items: center;
+}
+h2 {
+  color: #afafaf;
+}
+.normal-border {
+  border: 5px solid #382121;
+}
+
+.marked-border {
+  border: 5px solid yellowgreen;
+}
+#sword {
+  background-image: url("https://zilliongamer.com/uploads/tft-mobile/set-5/items/bf-sword.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  border: 5px solid #382121;
+  border-radius: 20px;
+  transition: scale 0.5s ease;
+  &:hover {
+    cursor: pointer;
+    scale: 1.1;
+  }
+}
+#bow {
+  background-image: url("https://zilliongamer.com/uploads/tft-mobile/set-5/items/recurve-bow.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  border: 5px solid #382121;
+  border-radius: 20px;
+  transition: scale 0.5s ease;
+  &:hover {
+    cursor: pointer;
+    scale: 1.1;
+  }
+}
+#wand {
+  background-image: url("https://zilliongamer.com/uploads/tft-mobile/set-5/items/needlessly-large-rod.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  border: 5px solid #382121;
+  border-radius: 20px;
+  transition: scale 0.5s ease;
+  &:hover {
+    cursor: pointer;
+    scale: 1.1;
+  }
+}
+#attackResult {
+  padding-top: 50px;
+  width: 300px;
+  height: 160px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#gameOver {
+  display: none;
+  gap: 50px;
+  a {
+    text-decoration: none;
+  }
+}
