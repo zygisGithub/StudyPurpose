@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div id="gameStart">
+    <div class="container colum alignCenter">
+        <h2 id="chosen">Chose your champion!</h2>
+        <div class="d-flex">
+            <div id="playerImg1" data-name="Vayne"></div>
+            <div id="playerImg2" data-name="Olaf"></div>
+            <div id="playerImg3" data-name="Garen"></div>
+            <div id="playerImg4" data-name="Lissandra"></div>
+            <div id="playerImg5" data-name="Ashe"></div>
+        </div>
+        <div class="btn" id="start">Start Game</div>
+    </div>
+</div>
+<div id="gameOver">
+    <div class="container colum alignCenter">
+        <img src="images/deafeat-removebg-preview.png" alt="">
+        <a href="index.html"><div class="btn">Restart</div></a>
+    </div>
+</div>
+<div id="gameContainer">
+    <div class="hud">
+        <p id="goldDisplay">Gold: 0</p>
+        <div class="d-flex"><div id="potion"></div>50G +100HP</div>
+    </div>
+    <div class="container">
+        <div id="player" class="card">
+            <div id="playerImage"></div>
+            <div id="playerHealthBar">
+                <div id="playerHealthProgress">
+                    <p id="healthCountP">100/100</p>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div id="sword"></div>
+                <div id="bow"></div>
+                <div id="wand"></div>
+            </div>
+        </div>
+        <div class="display">
+            <div class="btn" id="attack">Attack!</div>
+            <div id="attackResult"></div>
+        </div>
+        <div id="enemy" class="card">
+            <div id="enemyImage" class="card"></div>
+            <div id="enemyHealthBar">
+                <div id="enemyHealthProgress">
+                    <p id="healthCountE">100/100</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<audio id="slash" src="mixkit-fast-sword-hit-in-medieval-battle-2764.wav"></audio>
+</body>
+</html>
