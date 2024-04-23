@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div id="toolbar"></div>
+        <div id="header">
+            <h1 id="headerText">Header Text</h1>
+        </div>
+        <div class="main">
+            <div id="sidebar">
+                <div class="btn">Button</div>
+                <div class="btn">Button</div>
+                <div class="btn">Button</div>
+                <div class="btn">Button</div>
+            </div>
+            <div id="articles"></div>
+        </div>
+    </div>
+    <div id="settings">
+        <h3>Settings:</h3>
+        <div class="settingsStyle">
+            <p>Toolbar:</p>
+            <input id="toolbarOnOff" type="checkbox" checked>
+        </div>
+        <div class="settingsStyle">
+            <p>Toolbar color:</p>
+            <input type="text" placeholder="your color" id="editToolbarColor">
+            <div class="btn" id="editToolbarColorBtn">Edit</div>
+        </div>
+        <div class="settingsStyle">
+            <p>Toolbar padding:</p>
+            <input type="number" placeholder="0" id="editToolbarPadding">
+            <div class="btn" id="editToolbarPaddingBtn">Edit</div>
+        </div>
+        <div class="settingsStyle">
+            <p>Add link for toolbar:</p>
+            <input type="url" placeholder="Your url" id="addLinks">
+            <div class="btn" id="addLinksBtn">Edit</div>
+        </div>
+        <div class="settingsStyle">
+            <p>Header Background:</p>
+            <input type="url" placeholder="Image Url" id="editHeaderBackground">
+            <div class="btn" id="editHeaderBackgroundBtn">Edit</div>
+        </div>
+        <div class="settingsStyle">
+            <p>Header Padding</p>
+            <input type="number" placeholder="0" id="editHeaderPadding">
+            <div class="btn" id="editHeaderPaddingBtn">Edit</div>
+        </div>
+        <div class="settingsStyle">
+            <p>Side bar:</p>
+            <input type="checkbox" id="sidebarOnOff" checked>
+        </div>
+        <div class="settingsStyle">
+            <p>Header text:</p>
+            <input type="text" placeholder="your text" id="editHeaderText">
+            <div class="btn" id="editHeaderTextBtn">Edit</div>
+        </div>
+        <p>Add article:</p>
+        <div class="settingsStyle">
+            <p>Article image:</p>
+            <input type="url" placeholder="imager url" id="articleImage">
+        </div>
+        <div class="settingsStyle">
+            <p>Article padding:</p>
+            <input type="number" placeholder="your padding" id="articlePadding">
+        </div>
+        <div class="settingsStyle">
+            <p>Article text:</p>
+            <input type="text" placeholder="your text" id="articleText">
+        </div>
+        <div class="btn" id="addArticleBtn">Add Article</div>
+    </div>
+</body>
+</html>
