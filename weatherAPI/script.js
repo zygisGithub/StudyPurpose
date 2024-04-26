@@ -12,7 +12,7 @@ trigger.onclick = function () {
     cityValue = city.value
     console.log(cityValue)
 
-    fetch(`http://api.weatherapi.com/v1/current.json?key=ee13bdcd9cda438b826115121242604&q=${cityValue}&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=ee13bdcd9cda438b826115121242604&q=${cityValue}&aqi=no`)
         .then((res) => res.json())
         .then((data) => {
             test = data
